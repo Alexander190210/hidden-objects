@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<div class="panel">
+		<h1>Предметы</h1>
+		<h1>баллы: <span class="score">0</span></h1>
+		<h1 class="apple-text">Яблоко</h1>
+		<h1 class="book-text">Книги</h1>
+		<h1 class="podyshka-text">Подушка</h1>
+		<h1 class="-room-text">Картина</h1>
+	</div>
+	
+	<div class="apple"></div>
+	<div class="book"></div>
+	<div class="podyshka"></div>
+	<div class="-room"></div>
+
+</body>
+	<script>
+		let score = 0;
+		document.querySelector(".apple").onclick = function() {
+		score = score + 1; 
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".apple").style.display = "none"
+		document.querySelector(".apple-text").style.textDecoration = "line-through"
+
+	}
+			document.querySelector(".book").onclick = function() {
+		score = score + 1; 
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".book").style.display = "none"
+		document.querySelector(".book-text").style.textDecoration = "line-through"
+	}
+		document.querySelector(".podyshka").onclick = function() {
+		score = score + 1; 
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".podyshka").style.display = "none"
+		document.querySelector(".podyshka-text").style.textDecoration = "line-through"
+	}
+			document.querySelector(".-room").onclick = function() {
+		score = score + 1; 
+		document.querySelector(".score").innerHTML = score;
+		document.querySelector(".-room").style.display = "none"
+		document.querySelector(".-room-text").style.textDecoration = "line-through"
+	}
+
+	</script>
+</html>
